@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Focus from './components/Focus';
+import FormParent from './components/FormParent';
+import Q1 from './components/Q1';
+import Q4 from './components/Q4';
+import Q5_Q9 from './components/Q5_Q9';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Q1 />
+            <Focus />
+            <FormParent />
+            <Q4 />
+            <Q5_Q9 />
+        </div>
+    );
 }
 
 export default App;
